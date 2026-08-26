@@ -1,0 +1,90 @@
+generated: '2026-08-25'
+method: probed
+source: >-
+  Live unauthenticated GET probes of /.well-known/* on every MarketerHire host reachable from
+  apis.yml (marketerhire.com), the client/talent application (app.marketerhire.com) and the
+  talent portal (talent.marketerhire.com), 2026-08-25.
+summary: >-
+  No MarketerHire host serves a real /.well-known document. marketerhire.com (Webflow) returns a
+  404 HTML page reading "Invalid .well-known request" for every path. app.marketerhire.com returns
+  HTTP 500 with a JSON error envelope for every path, including /robots.txt, so it has no
+  well-known surface either. talent.marketerhire.com answers HTTP 200 for EVERY /.well-known/*
+  path with the same single-page-app HTML shell — that is an SPA catch-all, not a document, and is
+  recorded as a miss. No WellKnown, SecurityTxt or AgentCard pointer is emitted.
+hosts:
+- host: marketerhire.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: app.marketerhire.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 500
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 500
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 500
+    file: null
+  - path: /.well-known/api-catalog
+    status: 500
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 500
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 500
+    file: null
+  - path: /.well-known/agent.json
+    status: 500
+    file: null
+- host: talent.marketerhire.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: HTML single-page-app shell, not a document — catch-all 200; treated as a miss.
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: HTML single-page-app shell, not a document — catch-all 200; treated as a miss.
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: HTML single-page-app shell, not a document — catch-all 200; treated as a miss.
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: HTML single-page-app shell, not a document — catch-all 200; treated as a miss.
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: HTML single-page-app shell, not a document — catch-all 200; treated as a miss.
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: HTML single-page-app shell, not a document — catch-all 200; treated as a miss.
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: HTML single-page-app shell, not a document — catch-all 200; treated as a miss.

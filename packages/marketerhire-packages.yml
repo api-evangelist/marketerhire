@@ -1,0 +1,31 @@
+generated: '2026-08-25'
+method: searched
+source: >-
+  Registry searches on npm (registry.npmjs.org search), PyPI, RubyGems, crates.io, and a scan of
+  github.com/MarketerHire, 2026-08-25.
+summary: >-
+  MarketerHire publishes no client SDKs or packages in any public registry. npm search for
+  "marketerhire" returns 0 results; pypi.org/pypi/marketerhire/json and
+  rubygems.org/api/v1/gems/marketerhire.json both return 404; crates.io returns 0 crates. The
+  GitHub organization holds five public repositories, none of which is a distributable client
+  library — two are forks of third-party projects (resume-schema, verify-email), one is an org
+  profile, one a single-page HTML prototype (ops-hub-prototype), and one is an internal service
+  (mh-brain) with a pyproject.toml that is not published to PyPI.
+package_count: 0
+packages: []
+registries_searched:
+- registry: npm
+  query: https://registry.npmjs.org/-/v1/search?text=marketerhire
+  results: 0
+- registry: pypi
+  query: https://pypi.org/pypi/marketerhire/json
+  status: 404
+- registry: rubygems
+  query: https://rubygems.org/api/v1/gems/marketerhire.json
+  status: 404
+- registry: crates.io
+  query: https://crates.io/api/v1/crates?q=marketerhire
+  results: 0
+notes: >-
+  No `SDKs` pointer is emitted — there is no official SDK to point at. Recorded as a measured
+  absence, not an unchecked gap.

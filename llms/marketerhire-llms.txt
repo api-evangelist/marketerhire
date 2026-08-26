@@ -1,0 +1,74 @@
+# MarketerHire
+
+> MarketerHire is a curated marketing-talent marketplace that matches startups, growth-stage
+> businesses and Fortune 500 brands with pre-vetted senior freelance and fractional marketers,
+> typically within 48 hours and backed by a two-week trial.
+
+<!--
+generated: 2026-08-25
+method: generated
+source: apis.yml + artifacts in this API Evangelist profile repository (all/marketerhire/).
+note: MarketerHire does not serve /llms.txt on any of its own hosts — https://marketerhire.com/llms.txt
+      returned HTTP 404 on 2026-08-25. This file is an API Evangelist-generated summary and is NOT
+      published by MarketerHire.
+-->
+
+## What MarketerHire is
+
+MarketerHire sells access to human marketing talent, not software. Clients describe a need, are
+matched with a vetted marketer in 24-48 hours, and work month-to-month with a two-week refundable
+trial. Roles covered include growth marketing, paid media/performance, SEO and content strategy,
+email and lifecycle, brand and creative, marketing operations, and fractional CMO engagements.
+
+## API surface
+
+**MarketerHire publishes no public API.** As of 2026-08-25 there is no developer portal, no API
+reference, no OpenAPI/AsyncAPI/GraphQL/gRPC/WSDL contract, no MCP server, no A2A agent card, and no
+client SDK in any public package registry. Probes of `/openapi.json`, `/openapi.yaml`,
+`/swagger.json`, `/v1/openapi.json`, `/api-docs`, `/docs`, `/redoc` and `/graphql` on
+marketerhire.com all returned HTTP 404; the same paths on app.marketerhire.com return HTTP 500 from
+a generic error handler. `api.marketerhire.com`, `docs.marketerhire.com`,
+`developers.marketerhire.com` and `status.marketerhire.com` resolve only through a wildcard
+Vercel DNS record and present no valid TLS certificate — they are not served.
+
+The one first-party HTTP service whose source is public is **BrightMatter**, in
+https://github.com/MarketerHire/mh-brain — a FastAPI application (`api.py`) exposing roughly 22
+routes under `/api/v1/` (health, episodes, guidance, outcomes, tracking, consolidation, patterns,
+knowledge-centre and dashboard reads), authenticated by an `X-API-Key` header and deployed to Modal
+(`modal_app.py`). Its own documentation only ever names `http://localhost:8100`; no production base
+URL is published, so it is not a callable public API and no contract has been derived from it.
+
+## Hosts
+
+- https://marketerhire.com — marketing site and blog (Webflow)
+- https://app.marketerhire.com — client/talent application (sign-in required)
+- https://talent.marketerhire.com — talent portal (Shortlist-hosted; answers HTTP 200 with an SPA
+  shell for every unknown path, including all `/.well-known/*` requests)
+
+## Public pages
+
+- [Home](https://marketerhire.com)
+- [Pricing](https://marketerhire.com/pricing) — quote-only; no published tiers
+- [Roles](https://marketerhire.com/roles)
+- [Hire a marketer](https://marketerhire.com/hire)
+- [Apply as a marketer](https://marketerhire.com/apply)
+- [Blog](https://marketerhire.com/blog) ([RSS](https://marketerhire.com/blog/rss.xml))
+- [Glossaries](https://marketerhire.com/glossaries)
+- [FAQs](https://marketerhire.com/faqs/all)
+- [Careers](https://marketerhire.com/careers)
+- [Sign in](https://app.marketerhire.com/sign-in)
+- [Terms of service](https://marketerhire.com/policies/tos)
+- [Privacy policy](https://marketerhire.com/policies/privacy-policy)
+- [Cookies policy](https://marketerhire.com/policies/cookies-policy)
+- [GitHub organization](https://github.com/MarketerHire)
+
+## Contact
+
+- contact@marketerhire.com
+
+## Agent guidance
+
+There is nothing here for an agent to call. Do not construct requests against
+`api.marketerhire.com` or any `*.marketerhire.com` host — the wildcard DNS record makes unserved
+names resolve, and `talent.marketerhire.com` returns HTTP 200 for paths that do not exist. To
+engage MarketerHire, use the human intake form at https://marketerhire.com/hire.

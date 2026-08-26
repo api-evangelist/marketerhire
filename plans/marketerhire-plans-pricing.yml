@@ -1,0 +1,28 @@
+generated: '2026-08-25'
+method: searched
+source: https://marketerhire.com/pricing
+docs: https://marketerhire.com/pricing
+summary: >-
+  MarketerHire publishes no priced plans or tiers. The pricing page states plainly that "there's no
+  plan to pick and no retainer to guess at" — rates are set per engagement in a consultation, after
+  which a match is made in 24-48 hours. Billing is described as month-to-month with no long-term
+  commitment and a two-week refundable trial on each hire. There is no self-serve checkout for a
+  published price and no API-metered plan of any kind, because MarketerHire sells human marketing
+  talent rather than API access.
+currency: USD
+plan_count: 0
+plans: []
+commercial_model:
+  type: quote-only
+  self_serve: false
+  billing_period: month-to-month
+  commitment: none stated
+  trial: two-week refundable trial per hire
+  quote_channels:
+  - https://marketerhire.com/hire
+  - https://marketerhire.com/book
+  - mailto:contact@marketerhire.com
+api_metering: none — no public API product is sold
+notes: >-
+  plan_count is an honest zero: it records that the provider publishes no tiers, not that the
+  pricing page was unreachable. The page returned HTTP 200 on 2026-08-25.

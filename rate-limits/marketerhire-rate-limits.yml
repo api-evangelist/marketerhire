@@ -1,0 +1,20 @@
+generated: '2026-08-25'
+method: searched
+source: >-
+  Searched marketerhire.com (Webflow marketing site, 2,700-URL sitemap), the GitHub organization
+  github.com/MarketerHire, and app.marketerhire.com for any published rate-limit documentation,
+  2026-08-25.
+summary: >-
+  MarketerHire documents no API rate limits, because it publishes no public API. No developer
+  portal, API reference, or terms section describes request quotas, throttling windows, burst
+  allowances, or 429 behaviour. The one first-party HTTP service whose source is public — the
+  BrightMatter API in github.com/MarketerHire/mh-brain — implements only an X-API-Key check in
+  api.py and no rate limiting on its own routes (lib/platform_ingestion/rate_limiter.py throttles
+  MarketerHire's OUTBOUND calls to Shopify/Klaviyo/Meta/Google, not inbound callers).
+limit_count: 0
+limits: []
+response_headers: []
+exhaustion_status: null
+notes: >-
+  An honest zero. Nothing was blocked or gated during the search; there is simply no published
+  limit to record.

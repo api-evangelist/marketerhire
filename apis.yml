@@ -1,7 +1,16 @@
 aid: marketerhire
 name: MarketerHire
-description: 'MarketerHire is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  MarketerHire is a curated marketing-talent marketplace that matches startups, growth-stage
+  businesses and Fortune 500 brands with pre-vetted senior freelance and fractional marketers —
+  growth marketers, paid-media buyers, SEO and content strategists, email/lifecycle specialists,
+  brand and creative talent — typically within 48 hours, backed by a two-week trial. The company
+  operates a public marketing site and blog on Webflow, a client/talent application at
+  app.marketerhire.com, and a talent portal on talent.marketerhire.com. MarketerHire publishes no
+  public developer program, API reference, or machine-readable API contract; its only public
+  engineering surface is a small GitHub organization, including mh-brain, the source for its
+  internal "BrightMatter" growth-intelligence HTTP service.
+image: https://cdn.prod.website-files.com/5ec70e2719e95acb889006a3/6250be9b66c2423cf2d71534_MH-full-logo-lockup-horizontal-on-white.png
 url: https://raw.githubusercontent.com/api-evangelist/marketerhire/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +21,14 @@ created: '2026-08-25'
 modified: '2026-08-25'
 tags:
 - Company
+- Marketing
+- Talent Marketplace
+- Freelance
+- Recruiting
+- Staffing
+- Growth Marketing
+- Human Resources
+- Marketplace
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +36,57 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/marketerhire-domain-security.yml
 - type: Website
-  url: https://augment.market/c/marketerhire
+  url: https://marketerhire.com
+- type: Blog
+  url: https://marketerhire.com/blog
+- type: BlogRSS
+  url: https://marketerhire.com/blog/rss.xml
+- type: Pricing
+  url: https://marketerhire.com/pricing
+- type: TermsOfService
+  url: https://marketerhire.com/policies/tos
+- type: PrivacyPolicy
+  url: https://marketerhire.com/policies/privacy-policy
+- type: GitHubOrganization
+  url: https://github.com/MarketerHire
+- type: SourceCode
+  url: https://github.com/MarketerHire/mh-brain
+- type: SignUp
+  url: https://app.marketerhire.com/sign-in
+- type: FAQ
+  url: https://marketerhire.com/faqs/all
+- type: Careers
+  url: https://marketerhire.com/careers
+- type: LLMsTxt
+  url: llms/marketerhire-llms.txt
+
+x-enrichment:
+  date: '2026-08-25'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    MarketerHire sells human marketing talent through a Webflow marketing site and a sign-in-only
+    client app; there is no developer portal, no API reference and no spec at any path or host —
+    api./docs./developers.marketerhire.com resolve only via a wildcard Vercel DNS record and
+    present no valid TLS certificate, and the only first-party HTTP service (BrightMatter, in
+    github.com/MarketerHire/mh-brain) documents no base URL other than http://localhost:8100.
+  evidence:
+    - url: https://marketerhire.com/openapi.json
+      status: 404
+    - url: https://marketerhire.com/.well-known/api-catalog
+      status: 404
+    - url: https://marketerhire.com/llms.txt
+      status: 404
+    - url: https://app.marketerhire.com/openapi.json
+      status: 500
+    - url: https://marketerhire.com/pricing
+      status: 200
+  checked: '2026-08-25'
