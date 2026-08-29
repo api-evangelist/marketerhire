@@ -10,6 +10,18 @@ description: >-
   public developer program, API reference, or machine-readable API contract; its only public
   engineering surface is a small GitHub organization, including mh-brain, the source for its
   internal "BrightMatter" growth-intelligence HTTP service.
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: true
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - pricing
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/5ec70e2719e95acb889006a3/6250be9b66c2423cf2d71534_MH-full-logo-lockup-horizontal-on-white.png
 url: https://raw.githubusercontent.com/api-evangelist/marketerhire/refs/heads/main/apis.yml
 x-type: company
