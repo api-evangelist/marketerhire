@@ -1,0 +1,21 @@
+{
+  "repo": "marketerhire",
+  "feeds": [
+    {
+      "source": "https://marketerhire.com",
+      "feed_url": "https://marketerhire.com",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://marketerhire.com/blog",
+      "feed_url": "https://marketerhire.com/blog/rss.xml",
+      "title": "",
+      "saved": 4,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 4,
+  "fetched": "2026-08-30T22:33:40Z"
+}
