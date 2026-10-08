@@ -64,6 +64,10 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Plans
+  url: plans/marketerhire-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/marketerhire-rate-limits.yml
 - type: DomainSecurity
   url: security/marketerhire-domain-security.yml
 - type: Website
