@@ -64,5 +64,97 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-MarketerHire is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://augment.market/c/marketerhire
+MarketerHire is a curated marketing-talent marketplace that matches startups, growth-stage businesses and Fortune 500 brands with pre-vetted senior freelance and fractional marketers — growth marketers, paid-media buyers, SEO and content strategists, email/lifecycle specialists, brand and creative talent — typically within 48 hours, backed by a two-week trial. The company operates a public marketing site and blog on Webflow, a client/talent application at app.marketerhire.com, and a talent portal on talent.marketerhire.com. MarketerHire publishes no public developer program, API reference, or machine-readable API contract; its only public engineering surface is a small GitHub organization, including mh-brain, the source for its internal "BrightMatter" growth-intelligence HTTP service.
+
+**Areas:** Company · Marketing · Talent Marketplace · Freelance · Recruiting · Staffing · Growth Marketing · Human Resources · Marketplace
+
+## MarketerHire on APIs.io
+
+Everything profiled for MarketerHire is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/marketerhire/](https://apis.io/providers/marketerhire/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Marketerhire Domain Security](https://apis.io/security/marketerhire/marketerhire-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Marketerhire Plans Pricing](https://apis.io/plans/marketerhire/marketerhire-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Marketerhire Rate Limits](https://apis.io/rate-limits/marketerhire/marketerhire-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://marketerhire.com)
+- [Pricing](https://marketerhire.com/pricing)
+- [Sign up](https://app.marketerhire.com/sign-in)
+- [Blog](https://marketerhire.com/blog)
+- [Terms of service](https://marketerhire.com/policies/tos)
+- [Privacy policy](https://marketerhire.com/policies/privacy-policy)
+- [GitHub](https://github.com/MarketerHire)
+
+## API Evangelist rating
+
+**Kin Score 14.5** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 44.7 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Employment & Payroll
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/marketerhire/](https://apis.io/providers/marketerhire/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for MarketerHire: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/marketerhire/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
